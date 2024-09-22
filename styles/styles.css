@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    position: relative;
+    background-color: rgb(243, 33, 103);
+    color: white;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-left: 1px solid rgb(243, 33, 103);
+}
+td {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    border: 1px solid rgb(78, 78, 78);
+}
+input[type="file"] {
+    display: none;
+}
+pre {
+    display: none;
+    width: 100vw;
+    height: 50%;
+    overflow: auto;
+}
+.container-choose {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 24, 81);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    border-radius: 1rem;
+}
+.container {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+}
+.create-sheet, .download-sheet {
+    display: none;
+    border: none;
+    width: 100vw;
+    background-color: rgb(44, 129, 255);
+    color: white;
+}
+.download-sheet, .create-sheet {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 1rem;
+}
+.create-sheet { 
+    border-bottom: 2px dashed #ffffff;
+}
+.container-down {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: fit-content;
+}
+.container-choose:hover {
+    font-size: 1.2rem;
+    transition: 500ms;
+}
+ .create-sheet:hover {
+    padding: 2rem;
+    transition: 500ms;
+}
+.btn-back {
+    display: none;
+    padding: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(230, 226, 14);
+    border-radius: 1rem;
+    color: white;
+    border: 0px;
+    z-index: 1;
+}
+.btn-back:hover {
+    transition: 500ms;
+    scale: 1.1;
+}
+.container-down-main {
+    display: none;
+    background-color: rgb(44, 129, 255);
+    padding: 1rem;
+}
+.input-name-sheet {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(21, 84, 179);
+    border: 0px;
+    border-radius: 1rem;
+    outline: white;
+    color: #ffffff;
+}
+.container-down {
+    display: none;
+    background-color: rgb(44, 129, 255);
+    padding: 1rem;
+}
+.input-name-sheet::placeholder {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(191, 202, 211);
+}

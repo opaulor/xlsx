@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Planilhas </title>
+    <script src="libs/xlsx.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <label class="container-main-choose">
+            <input type="file" class="to-choose" id="to-choose">
+            <div class="container-choose">
+                <span class="span-select">
+                    Selecionar arquivos
+                </span>
+            </div>
+        </label>
+        
+        <button class="create-sheet" id="create-sheet"> Criar tabela com dados do próximo mês </button>
+        <div class="container-down-main">
+            <div class="container-down">
+                <button class="download-sheet" id="download-sheet"> Baixar em .xlsx nova Panilha </button>
+                <input type="text" class="input-name-sheet" id="input-name-sheet" placeholder="Nome para o arquivo">
+            </div>
+            <button class="btn-back"> voltar </button>
+        </div>
+
+        <pre class="output-db" id="output-db"></pre>
+
+        <pre class="output-newdb" id="output-newdb"></pre>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
